@@ -1,0 +1,20 @@
+.landing{
+  width: 100%;
+  height: 50vh;
+  background-image: url('../../assets/flagsb.jpg');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 1%;
+}
+.ui.header.landing-main{
+  padding-top: 5%;
+  padding-bottom: .2%;
+  margin-bottom: 0;
+  font-family: 'Coda Caption', sans-serif;
+  font-size: 5em;
+}
+.ui.header.landing-sub{
+  font-family: 'Play', sans-serif;
+  font-size: 2em;
+}

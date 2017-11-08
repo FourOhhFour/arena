@@ -1,0 +1,11 @@
+
+<div class="ui segments" *ngFor="let sport of sports" (click)="changeShow()">
+  <div class="ui segment">
+    <h2 class="ui header">{{sport}}</h2>
+  </div>
+  <div class="ui segments" *ngIf="show">
+    <div class="ui segment">
+      <p>Nested Top</p>
+    </div>
+  </div>
+</div>

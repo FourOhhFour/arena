@@ -1,0 +1,38 @@
+
+<div class="login-form-holder">
+  <div class="ui middle aligned center aligned grid">
+    <div class="column">
+      <h2 class="ui image header">
+        <div class="content">
+          Register for an account
+        </div>
+      </h2>
+      <form method="get" class="ui large form">
+        <div class="ui stacked secondary  segment">
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="user icon"></i>
+              <input type="text" name="email" placeholder="E-mail address" #email required>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="lock icon"></i>
+              <input type="text" name="username" placeholder="Username" #username required>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="lock icon"></i>
+              <input type="password" name="password" placeholder="Password" #password required>
+            </div>
+          </div>
+          <div class="ui fluid large teal submit button" (click)="Register(email.value, username.value, password.value)">Register</div>
+        </div>
+
+        <div class="ui error message"></div>
+
+      </form>
+    </div>
+  </div>
+</div>

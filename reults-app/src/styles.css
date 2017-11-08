@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files
+font-family: 'Coda Caption', sans-serif;
+font-family: 'Play', sans-serif;
+*/
+
+*{
+  font-family: 'Play', sans-serif;;
+}
+app-topbar{
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  margin-top: -8px;
+}
+.login-form-holder{
+  max-width: 50%;
+  margin: auto;
+  padding-top: 5%;
+}
