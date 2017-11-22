@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedComponent implements OnInit {
 
+  sports: string[];
+
   constructor() { }
 
   ngOnInit() {
+    this.sports = ['Soccer', 'American Football'];
   }
 
 }

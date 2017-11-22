@@ -1,21 +1,29 @@
 import { Component, OnInit } from '@angular/core';
+import { Result } from '../resultClass';
 
 @Component({
   selector: 'app-results',
   templateUrl: './results.component.html',
-  styleUrls: ['./results.component.css']
+  styleUrls: ['./results.component.css'],
+  inputs: ['sport', 'results']
 })
 export class ResultsComponent implements OnInit {
 
 
-  sports: string[] = [];
-  show: boolean = true;
+  sport: string;
+  results: Result[];
+  show: boolean = false;
 
 
   constructor() { }
 
   ngOnInit() {
-    this.sports = ["soccer", "football", "rugby", "tennis", "water polo"]
+    this.results = [
+      new Result(new Date().toLocaleDateString(), 'Red Team', 'Blue Team', 'Big Stadium'),
+      new Result(new Date().toLocaleDateString(), 'Ireland', 'Achill', 'Mainland'),
+      new Result(new Date().toLocaleDateString(), 'Roscommon', 'Sligo', 'Hyde Park'),
+      new Result(new Date().toLocaleDateString(), 'Mexican Knights', 'Mexican Cubs', 'Longford')
+    ]; 
   }
 
   changeShow(){

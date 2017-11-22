@@ -2,19 +2,31 @@
   width: 100%;
   height: 50vh;
   background-image: url('../../assets/flagsb.jpg');
-  background-position: center;
+  background-position: 50% 180%;
   background-size: cover;
+  background-attachment: fixed;
   text-align: center;
   margin-top: 1%;
 }
 .ui.header.landing-main{
-  padding-top: 5%;
+  padding-top: 9%;
   padding-bottom: .2%;
-  margin-bottom: 0;
+  margin-bottom: -2%;
   font-family: 'Coda Caption', sans-serif;
   font-size: 5em;
+  color: #faed26;
+  text-shadow: .1px .5px #5a5560;
+  letter-spacing: 1em;
 }
 .ui.header.landing-sub{
   font-family: 'Play', sans-serif;
   font-size: 2em;
+  text-transform: uppercase;
+  color: #faed26;
+  text-shadow: .1px .5px #5a5560;
+  word-spacing: .3em;
+}
+.section-heading{
+  text-align: center;
+  font-family: 'Play', sans-serif;
 }

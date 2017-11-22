@@ -20,10 +20,10 @@
   <a class="item" *ngIf="router.url != '/feed'" [routerLink]="['/feed']">
     Feed
   </a>
-  <a class="active item" *ngIf="router.url === '/sport:/id'" [routerLink]="['/sport:/id']">
+  <a class="active item" *ngIf="router.url === '/sport'" [routerLink]="['/sport']">
     Sports
   </a>
-  <a class="item" *ngIf="router.url != '/sport:/id'" [routerLink]="['/sport:/id']">
+  <a class="item" *ngIf="router.url != '/sport'" [routerLink]="['/sport']">
     Sports
   </a>
   <a class="active item" *ngIf="router.url === '/user'" [routerLink]="['/user']">

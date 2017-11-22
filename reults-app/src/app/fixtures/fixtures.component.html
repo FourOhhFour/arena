@@ -1,3 +1,10 @@
-<p>
-  fixtures works!
-</p>
+
+<div class="ui segments" (click)="changeShow()">
+    <div class="ui segment section-segment">
+      <h2 class="ui header">{{sport}}</h2>
+      <p class="expand">click to expand</p>
+    </div>
+    <div class="ui segments" *ngIf="show">
+        <app-fixture *ngFor="let fixture of fixtures" [fixture]="fixture"></app-fixture>
+    </div>
+  </div>

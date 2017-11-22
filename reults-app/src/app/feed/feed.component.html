@@ -1,16 +1,18 @@
 <div class="landing">
   <h1 class="ui header landing-main">Arena</h1>
-  <h2 class="ui header landing-sub">All your results in one place</h2>
+  <h2 class="ui header landing-sub">All the results</h2>
 </div>
 <div class="ui equal width grid">
   <div class="column">
     <div class="ui segment">
-      <app-results></app-results>
+      <h2 class="section-heading">Results</h2>
+      <app-results *ngFor="let sport of sports" [sport]="sport"></app-results>
     </div>
   </div>
   <div class="eight wide column">
     <div class="ui segment">
-      <app-fixtures></app-fixtures>
+      <h2 class="section-heading">Fixtures</h2>
+      <app-fixtures *ngFor="let sport of sports" [sport]="sport"></app-fixtures>
     </div>
   </div>
 </div>

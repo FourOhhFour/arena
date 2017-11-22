@@ -25,10 +25,13 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { RegisterComponent } from './register/register.component';
+import { ResultComponent } from './result/result.component';
+import { FixtureComponent } from './fixture/fixture.component';
 
 
 const appRoutes: Routes = [
   { path: 'feed', component: FeedComponent },
+  { path: 'sport', component: IndividualSportComponent },
   { path: 'sport:/id', component: SportComponent },
   { path: 'user', component: UserPageComponent },
   { path: 'login', component: LoginComponent },
@@ -55,7 +58,9 @@ const appRoutes: Routes = [
     UserPageComponent,
     UserBioComponent,
     UserSportSelectionComponent,
-    RegisterComponent
+    RegisterComponent,
+    ResultComponent,
+    FixtureComponent
   ],
   imports: [
     BrowserModule,

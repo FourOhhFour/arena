@@ -1,10 +1,18 @@
 /* You can add global styles to this file, and also import other style files
 font-family: 'Coda Caption', sans-serif;
 font-family: 'Play', sans-serif;
+
+#faed26 - yellow
+#46344e - purple
+#5a5560 - greyish purple
+#9d8d8f - grey
+#9b786f - brown
 */
 
 *{
-  font-family: 'Play', sans-serif;;
+  font-family: 'Play', sans-serif;
+}
+body{
 }
 app-topbar{
   position: fixed;
@@ -16,4 +24,10 @@ app-topbar{
   max-width: 50%;
   margin: auto;
   padding-top: 5%;
+}
+.ui.button, .ui.buttons{
+  border-radius: 0;/*get rid of tose stupid-looking rounded buttons from semantic ui*/
+}
+.ui.segments:not(.horizontal)>.segment:first-child{
+  border-radius: 0;
 }

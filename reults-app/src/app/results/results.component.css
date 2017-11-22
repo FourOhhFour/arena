@@ -1,0 +1,17 @@
+.section-segment{
+    background: #46344e;
+    text-align: center;
+    border-radius: 0;
+    cursor: pointer;
+    border-bottom: 4px solid #faed26;
+}
+.section-segment h2{
+    color: #faed26;
+    text-transform: uppercase;
+    font-family: 'Play', sans-serif;
+}
+p.expand{
+    float: right;
+    margin-top: -1%;
+    color: #faed26;
+}

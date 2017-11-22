@@ -1,0 +1,43 @@
+.one-result{
+    width: 100%;
+    margin-bottom: 2%;
+    text-align: center;
+    border-bottom: 2px solid #f1f1f2;
+}
+.team{
+    max-width: 20%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inine;
+    background: #f1f1f2;
+    padding: 1%;
+    font-size: 1.4em;
+}
+.team1{
+    float: left;
+}
+.team2{
+    float: right;
+}
+.meta-score{
+    display: inline;
+    background: #f1f1f2;
+    padding: 1%;
+    font-size: 1.4em;
+}
+.score1{
+    float: left;
+}
+.score2{
+    float: right;
+}
+.meta-scores{
+    max-width: 40%;
+    margin: 0 auto;
+}
+.meta-container{
+    max-width: 60%;
+    margin: 0 auto;
+    display: inline;
+}
