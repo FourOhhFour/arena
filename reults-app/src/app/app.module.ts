@@ -32,7 +32,7 @@ import { FixtureComponent } from './fixture/fixture.component';
 const appRoutes: Routes = [
   { path: 'feed', component: FeedComponent },
   { path: 'sport', component: IndividualSportComponent },
-  { path: 'sport:/id', component: SportComponent },
+  { path: 'sport/:id', component: SportComponent },
   { path: 'user', component: UserPageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },

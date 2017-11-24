@@ -1,0 +1,14 @@
+.main{
+    display: inline-block;
+    max-width: 80%;
+    min-width: 69%;
+    padding: 2%;
+}
+.comment{
+    display: inline-block;
+    float: right;
+    background: blue;
+    max-width: 30%;
+    min-width: 20%;
+    height: 100vh;
+}
