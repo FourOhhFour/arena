@@ -18,9 +18,15 @@ export class SportComponent implements OnInit {
     this.sub = this.route.params.subscribe(params => {
       this.sport = params['id']; 
       //get api data for sport in here
+      this.SpaceAmericanFootball();
    });
   }
 
+  SpaceAmericanFootball(){
+    if (this.sport == 'americanfootball'){
+      this.sport = 'American Football';
+    }
+  }
   
 
 }

@@ -7,8 +7,21 @@
 .comment{
     display: inline-block;
     float: right;
-    background: blue;
     max-width: 30%;
     min-width: 20%;
     height: 100vh;
+    border-left: 2px solid #44344e;
+}
+.header{
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+    background: #44344e;
+}
+.header-sport-name{
+    padding-bottom: 1%;
+    font-family: 'Play', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #faed23;
 }
