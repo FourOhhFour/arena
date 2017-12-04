@@ -79,7 +79,7 @@ export class SportComponent implements OnInit {
       
       this.route.params.subscribe(params => {
         this.sport = params['id'];
-        this.chat = this.af.list<any>('chat/' + params['id']).valueChanges();
+        this.chat = this.af.list<any>('chat/' + params['id'], ref => ref.orderByChild('size').limitToLast(6)).valueChanges();
         console.log(this.chat);
       });
       
