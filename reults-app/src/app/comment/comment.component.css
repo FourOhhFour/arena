@@ -1,0 +1,12 @@
+.message{
+    text-align: left;
+    font-size: 1.2em;
+}
+.sender{
+    text-align: right;
+    margin-top: -5%;
+}
+.chat-container{
+    margin: 5% 2%;
+    border-bottom: 2px solid #faed23;
+}

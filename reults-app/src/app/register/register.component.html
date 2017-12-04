@@ -12,22 +12,22 @@
           <div class="field">
             <div class="ui left icon input">
               <i class="user icon"></i>
-              <input type="text" name="email" placeholder="E-mail address" #email required>
+              <input type="text" name="email" [(ngModel)]="email" placeholder="E-mail address" required>
             </div>
           </div>
           <div class="field">
             <div class="ui left icon input">
               <i class="lock icon"></i>
-              <input type="text" name="username" placeholder="Username" #username required>
+              <input type="text" name="username" [(ngModel)]="username" placeholder="Username" required>
             </div>
           </div>
           <div class="field">
             <div class="ui left icon input">
               <i class="lock icon"></i>
-              <input type="password" name="password" placeholder="Password" #password required>
+              <input type="password" name="password" [(ngModel)]="password" placeholder="Password" required>
             </div>
           </div>
-          <div class="ui fluid large teal submit button" (click)="Register(email.value, username.value, password.value)">Register</div>
+          <div class="ui fluid large teal submit button" (click)="Register()">Register</div>
         </div>
 
         <div class="ui error message"></div>

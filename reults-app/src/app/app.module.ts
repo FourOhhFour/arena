@@ -1,8 +1,17 @@
+import { FirebaseApp } from 'angularfire2/firebase.app.module';
+
+//base
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+
+//services
+import { AuthService } from './auth.service';
+import { FirebaseService } from './firebase.service';
+
+//components
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { LoginComponent } from './login/login.component';
@@ -16,7 +25,11 @@ import { CommentComponent } from './comment/comment.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import { UserBioComponent } from './user-bio/user-bio.component';
 import { UserSportSelectionComponent } from './user-sport-selection/user-sport-selection.component';
+import { RegisterComponent } from './register/register.component';
+import { ResultComponent } from './result/result.component';
+import { FixtureComponent } from './fixture/fixture.component';
 
+//routing
 import { RouterModule, Routes } from '@angular/router';
 
 //firebase
@@ -24,9 +37,6 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
-import { RegisterComponent } from './register/register.component';
-import { ResultComponent } from './result/result.component';
-import { FixtureComponent } from './fixture/fixture.component';
 
 
 const appRoutes: Routes = [
@@ -71,7 +81,7 @@ const appRoutes: Routes = [
     AngularFireAuthModule,
     AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [AuthService, FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

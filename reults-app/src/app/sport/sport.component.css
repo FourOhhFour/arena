@@ -25,3 +25,7 @@
     font-size: 3em;
     color: #faed23;
 }
+.input-line-button{
+    float: right;
+    display: inline;
+}

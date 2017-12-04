@@ -13,4 +13,16 @@
       </div>
     </div>
 </div>
-<div class="comment"></div>
+<div class="comment">
+  <h3 class="chat-header">Chat</h3>
+  <app-comment *ngFor="let chatItem of chat | async" [comment]="chatItem"></app-comment>
+  <div class="input-line">
+    <div class="ui form">
+        <div class="fluid field">
+          <textarea rows="2" placeholder="Have your say" [(ngModel)]="input"></textarea>
+        </div>
+    </div>
+    <input type="button" class="ui button input-line-button" value="Send" (click)="WriteNewChatItem()"/>
+    
+  </div>
+</div>
