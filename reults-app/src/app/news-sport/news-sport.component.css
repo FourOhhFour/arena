@@ -1,0 +1,23 @@
+.header-holder .sport-header{
+    text-transform: uppercase;
+    font-size: 5em;
+    color: #faed26;
+    margin: 2%;
+}
+.header-holder{
+    width: 100%;
+    text-align: center;
+    background: #46344e;
+    height: 15%;
+    cursor: pointer;
+}
+.news-holder{
+    margin: auto;
+    width: 60%;
+}
+p.expand{
+    float: right;
+    margin-top: -4%;
+    color: #faed26;
+    margin-right: 2%;
+}

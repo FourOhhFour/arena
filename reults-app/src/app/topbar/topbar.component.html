@@ -1,17 +1,5 @@
-
-
-<!--
-<div class="my-topbar">
-  <h2 class="ui header">arena</h2>
-  <button class="ui inverted button login-button">
-    Login
-  </button>
-</div>
--->
-
-
 <div class="ui secondary pointing menu">
-  <div class="header item arena-head">
+  <div class="header item arena-head" [routerLink]="['/feed']">
     Arena
   </div>
   <a class="active item" *ngIf="router.url === '/feed'" [routerLink]="['/feed']">
@@ -33,9 +21,9 @@
     My Page
   </a>
   <div class="right menu">
-    <a class="ui item" *ngIf="!LoggedIn()" [routerLink]="['/login']">
+    <a class="ui item" *ngIf="user == null" [routerLink]="['/login']">
       Login
     </a>
-    <p *ngIf="LoggedIn()">{{user.displayName}}</p>
+    <p *ngIf="user != null">Logout</p>
   </div>
 </div>

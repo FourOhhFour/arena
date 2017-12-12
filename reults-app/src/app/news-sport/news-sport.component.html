@@ -1,0 +1,7 @@
+<div class="header-holder" (click)="changeShow()">
+  <h1 class="ui header sport-header">{{sport}}</h1>
+  <p class="expand">click to expand</p>
+</div>
+<div class="ui items news-holder" *ngIf="show">
+  <app-article *ngFor="let article of articles" [article]="article"></app-article>
+</div>

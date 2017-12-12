@@ -1,0 +1,52 @@
+.container{
+}
+.header-sport-name{
+    padding-bottom: 1%;
+    font-family: 'Play', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #faed23;
+    letter-spacing: 1.4em;
+}
+.header{
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+    background: #44344e;
+}
+.user-details{
+    display: inline-block;
+    float: right;
+    width: 50%;
+    height: 100vh;
+    border-left: 2px solid #44344e;
+    padding: 2%;
+    text-align: center;
+}
+.main{
+    display: inline-block;
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+}
+.selection-heading{
+    font-family: 'Play', sans-serif;
+}
+.user-info{
+    width: 70%;
+    margin: 2%;
+}
+.user-info-button{
+    display: block;
+    margin: 0 40%;
+}
+label{
+    display: block;
+    font-size: 3em;
+    margin: 3%;
+}
+input[type='checkbox']{
+    transform: scale(1.5);
+    padding-top: 0;
+    padding-bottom: 2%;
+}

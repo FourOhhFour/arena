@@ -1,7 +1,25 @@
 <div class="landing">
   <h1 class="ui header landing-main">Arena</h1>
-  <h2 class="ui header landing-sub">All the results</h2>
+  <h2 class="ui header landing-sub">All the news</h2>
 </div>
+
+<app-news-sport *ngFor="let sport of sports" [sport]="sport"></app-news-sport>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- THIS IS GONE NOW
 <div class="ui equal width grid">
   <div class="column">
     <div class="ui segment">
@@ -16,3 +34,4 @@
     </div>
   </div>
 </div>
+-->

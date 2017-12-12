@@ -143,11 +143,12 @@ export class AuthService {
   //// Helpers ////
   private updateUserData(): void {
   // Writes user name and email to realtime db
-  // useful if your app displays information about users or for admin features
     let path = `users/${this.currentUserId}`; // Endpoint on firebase
     let data = {
                   email: this.authState.email,
-                  name: this.authState.displayName
+                  name: this.authState.displayName,
+                  sport1: true,
+                  sport2: true
                 }
 
     this.db.object(path).update(data)

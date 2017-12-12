@@ -8,7 +8,7 @@
     display: inline-block;
     float: right;
     max-width: 30%;
-    min-width: 20%;
+    min-width: 20%; 
     height: 100vh;
     border-left: 2px solid #44344e;
 }

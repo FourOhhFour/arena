@@ -1,3 +1,28 @@
-<p>
-  user-page works!
-</p>
+<div class="container">
+    <div class="header">
+        <h1 class="header-sport-name">Your Page</h1>
+      </div>
+  <div class="main">
+    <h2 class="selection-heading">Your sports</h2>
+    <div class="checkboxes">
+      <label for="nhl"><input type="checkbox" name="nhl" [(ngModel)]="item.sport1" value="nhl" [checked]="item.sport1 == true">NHL</label>
+      <label for="nfl"><input type="checkbox" name="nfl" [(ngModel)]="item.sport2" value="nfl" [checked]="item.sport2 == true">NFL</label>
+    </div>
+  </div>
+  <div class="user-details">
+    <h2 class="selection-heading">Your Details</h2>
+    <div class="ui labeled input user-info">
+      <div class="ui label">
+        email
+      </div>
+      <input type="text" [(ngModel)]="item.email" placeholder="{{item.email}}">
+    </div>
+    <div class="ui labeled input user-info">
+      <div class="ui label">
+        name
+      </div>
+      <input type="text" [(ngModel)]="item.name" placeholder="{{item.name}}">
+    </div>
+    <div class="ui button user-info-button" (click)="Clicked()">Save</div>
+  </div> 
+</div>

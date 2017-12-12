@@ -9,14 +9,14 @@ import * as firebase from 'firebase/app';
   templateUrl: './topbar.component.html',
   styleUrls: ['./topbar.component.css']
 })
-export class TopbarComponent implements OnInit {
+export class TopbarComponent implements OnInit{
 
   user: Observable<firebase.User>;
   loggedIn: boolean = false;
 
-  constructor(private router: Router, public afAuth: AngularFireAuth) {
-    //this.user = afAuth.authState;
-    console.log('topbar constructor started')
+  constructor(private router: Router, public afAuth: AngularFireAuth) {}
+
+  ngOnInit() {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         this.user = user;
@@ -28,13 +28,11 @@ export class TopbarComponent implements OnInit {
         this.loggedIn = false;
         console.log('logged in = false');
       }
+      
     });
   }
 
-
-
-  ngOnInit() {
-  }
+  
 
   LoggedIn(): boolean{
     return this.loggedIn;

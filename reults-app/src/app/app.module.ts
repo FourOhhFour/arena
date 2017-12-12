@@ -37,6 +37,8 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
+import { NewsSportComponent } from './news-sport/news-sport.component';
+import { ArticleComponent } from './article/article.component';
 
 
 const appRoutes: Routes = [
@@ -70,7 +72,9 @@ const appRoutes: Routes = [
     UserSportSelectionComponent,
     RegisterComponent,
     ResultComponent,
-    FixtureComponent
+    FixtureComponent,
+    NewsSportComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
