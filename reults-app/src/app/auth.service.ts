@@ -11,12 +11,14 @@ import { AngularFireDatabaseModule, AngularFireDatabase, AngularFireList } from 
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Router } from "@angular/router";
 import * as firebase from 'firebase';
+import { Observable } from 'rxjs/Rx';
 
 
 @Injectable()
 export class AuthService {
 
   authState: any = null;
+  user_authenticated: boolean;
 
   constructor(private afAuth: AngularFireAuth,
               private db: AngularFireDatabase,
@@ -153,7 +155,6 @@ export class AuthService {
 
     this.db.object(path).update(data)
     .catch(error => console.log(error));
-
   }
 
   //update a user's displayName
@@ -163,6 +164,22 @@ export class AuthService {
       photoURL: null
     });
   }
+ 
+  getAuth(): boolean{
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {    
+        this.user_authenticated = true;  
+      }
+      else{
+        this.user_authenticated = false;
+      }
+    });
+    return this.user_authenticated;
+  }
+
+  isAuthenticated(): Observable<any> {
+    return this.afAuth.authState; //auth is already an observable
+} 
 
 
 

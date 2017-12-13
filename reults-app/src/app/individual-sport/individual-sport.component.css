@@ -8,8 +8,8 @@
     text-align: center;
 }
 .top-header h1{
-    font-size: 4.5em;
-    padding: .9em;
+    font-size: 4.5em; 
+    padding: 4.9%;
     color: #faed26;
     letter-spacing: 1.4em;
     text-transform: uppercase;
@@ -20,7 +20,11 @@
     height: 30vh;
     cursor: pointer;
     margin: 2% auto; 
+    filter: grayscale(.6);
+    border-bottom: 4px solid #faed26;
+    overflow: hidden;
 }
+/*
 .one-third.sport:nth-child(2){
     background: aquamarine;
     background-image: url('../../assets/hockey.jpg');
@@ -30,11 +34,36 @@
     background: hotpink;
     background-image: url('../../assets/american.jpg');
     background-position: center center;
+}*/
+
+.one-third.sport.hockey .child{
+    width: 100%;
+    height: 100%;
+    background: aquamarine;
+    background-image: url('../../assets/hockey.jpg');
+    background-position: center center;
+    background-size: cover;
+    transition: all .5s;
 }
-.one-third.sport{
-    filter: grayscale(.6);
-    border-bottom: 4px solid #faed26;
+.one-third.sport.hockey:hover .child,
+.one-third.sport.hockey:focus .child {
+  transform: scale(1.1);
 }
+
+.one-third.sport.football .child{
+    width: 100%;
+    height: 100%;
+    background: aquamarine;
+    background-image: url('../../assets/american.jpg');
+    background-position: center center;
+    background-size: cover;
+    transition: all .5s;
+}
+.one-third.sport.football:hover .child,
+.one-third.sport.football:focus .child {
+  transform: scale(1.1);
+}
+
 .one-third.sport h1{
     font-size: 9em;
     text-transform: uppercase;

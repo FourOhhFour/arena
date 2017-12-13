@@ -30,8 +30,8 @@ export class FeedComponent implements OnInit {
           if(this.item.sport2 == true){
             this.sports.push('nfl');
           }});
-        console.log('item - ' + this.item.email);
-        console.log('user - ' + user.uid);
+        //console.log('item - ' + this.item.email);
+        //console.log('user - ' + user.uid);
         
       }
       else{

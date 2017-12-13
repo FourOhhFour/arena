@@ -14,16 +14,18 @@
   <a class="item" *ngIf="router.url != '/sport'" [routerLink]="['/sport']">
     Sports
   </a>
-  <a class="active item" *ngIf="router.url === '/user'" [routerLink]="['/user']">
+  <a class="active item" *ngIf="router.url === '/user' && (auths.isAuthenticated() | async)" [routerLink]="['/user']">
     My Page
   </a>
-  <a class="item" *ngIf="router.url != '/user'" [routerLink]="['/user']">
+  <a class="item" *ngIf="router.url != '/user' && (auths.isAuthenticated() | async)" [routerLink]="['/user']">
     My Page
   </a>
   <div class="right menu">
-    <a class="ui item" *ngIf="user == null" [routerLink]="['/login']">
+    <a class="ui item" *ngIf="!(auths.isAuthenticated() | async)" [routerLink]="['/login']">
       Login
     </a>
-    <p *ngIf="user != null">Logout</p>
+    <a class="ui item" *ngIf="(auths.isAuthenticated() | async)" (click)="Logout()">
+      Logout
+    </a>
   </div>
 </div>
