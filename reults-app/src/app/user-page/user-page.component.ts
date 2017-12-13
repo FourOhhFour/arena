@@ -45,7 +45,7 @@ export class UserPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  private Clicked(){
+  public Clicked(){
     this.updateUserData();
     this.updateUserDisplayNameAndEmail();
   }

@@ -77,3 +77,26 @@ h1:nth-child(1){
     margin-top: 0;
     line-height: 0.7;
 }
+
+
+@media (max-width:500px) {
+    .top-header{
+        height: 10%;
+    }
+    .top-header h1{
+        display: none;
+    }
+    .one-third.sport h1{
+        font-size: 3em;
+        margin: auto;
+        color: #faed26;
+    }
+    .one-third.sport.football h1{
+        padding-top: 20%;
+        line-height: 1.2em;
+    }
+    .one-third.sport.hockey h1{
+        padding-top: 30%;
+        color: #46344e;
+    }
+}

@@ -16,7 +16,7 @@ export class TopbarComponent implements OnInit{
   uid: Observable<string>;
   loggedIn: boolean = false;
 
-  constructor(private router: Router, public afAuth: AngularFireAuth, public auths: AuthService) {}
+  constructor(public router: Router, public afAuth: AngularFireAuth, public auths: AuthService) {}
 
   ngOnInit() {
     firebase.auth().onAuthStateChanged(function(user) {

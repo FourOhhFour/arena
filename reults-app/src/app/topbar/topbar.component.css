@@ -3,3 +3,14 @@
   font-family: 'Coda Caption', sans-serif;
   cursor: pointer;
 }
+/*phones*/
+@media (max-width:500px) {
+  .ui.secondary.pointing.menu{
+    height: 100%;
+    width: 100%;
+    font-size: 3vw;
+  }
+  .right.menu{
+    float:left;
+  }
+}

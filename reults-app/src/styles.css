@@ -12,8 +12,6 @@ font-family: 'Play', sans-serif;
 *{
   font-family: 'Play', sans-serif;
 }
-body{
-}
 app-topbar{
   position: fixed;
   background: #fff;
@@ -30,4 +28,12 @@ app-topbar{
 }
 .ui.segments:not(.horizontal)>.segment:first-child{
   border-radius: 0;
+}
+
+/*phones*/
+@media (max-width:500px) {
+  app-topbar{
+    height: 10%;
+    width: 100%;
+  }
 }

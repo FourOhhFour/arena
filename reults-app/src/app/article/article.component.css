@@ -24,3 +24,21 @@
     margin-bottom: 4%;
     padding: 3%;
 }
+
+/*phones*/
+@media (max-width:500px) {
+    .item{
+        width: 100%;
+    }
+    .sport-image{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .sport-header{
+        font-size: 2em;
+    }
+    .sport-description{
+        display: none;
+    }
+}

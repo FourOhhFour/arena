@@ -21,3 +21,9 @@ p.expand{
     color: #faed26;
     margin-right: 2%;
 }
+
+@media (max-width:500px) {
+    .news-holder{
+        width: 90%;
+    }
+  }

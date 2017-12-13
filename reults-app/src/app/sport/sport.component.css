@@ -29,3 +29,22 @@
     float: right;
     display: inline;
 }
+
+@media (max-width:500px) {
+    .comment{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        border-left: none;
+        border-top: 2px solid #44344e;
+    }
+    .main{
+        display:block;
+        width: 100%;
+        max-width: 100%;
+    }
+    .chat-header{
+        text-align: center;
+        font-size: 2em;
+    }
+}
