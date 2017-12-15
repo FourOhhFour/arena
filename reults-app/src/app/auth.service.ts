@@ -2,6 +2,8 @@
 ==============================================================================
     AuthService
     This service handles all of the Firebase authentication bits and bobs
+
+    NOT MY CODE - FROM A WEBSITE I CAN'T REMEMBER. I'VE HAD THIS FOR A FEW MONTHS
 ==============================================================================
 ============================================================================*/
 
